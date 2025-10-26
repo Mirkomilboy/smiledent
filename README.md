@@ -6,7 +6,6 @@
 [Resend](https://resend.com/) <br>
 [TanStack](https://tanstack.com/) <br>
 <br>
-<br>
 Link to the live site: https://smiledent.vercel.app/
 
 ## Highlights
