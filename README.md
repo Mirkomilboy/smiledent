@@ -1,4 +1,9 @@
-This project built using [NextJS](https://nextjs.org/), [VapiAI](https://vapi.ai/), [Neon](https://neon.com/), [Clerk](https://clerk.com/)
+## Tech Stack:
+[NextJS](https://nextjs.org/) <br>
+[VapiAI](https://vapi.ai/) <br>
+[Neon](https://neon.com/) <br>
+[Clerk](https://clerk.com/) <br>
+[Resend](https://resend.com/) <br>
 <br>
 <br>
 Link to the live site: https://smiledent.vercel.app/
