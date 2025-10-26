@@ -4,6 +4,7 @@
 [Neon](https://neon.com/) <br>
 [Clerk](https://clerk.com/) <br>
 [Resend](https://resend.com/) <br>
+[TanStack](https://tanstack.com/) <br>
 <br>
 <br>
 Link to the live site: https://smiledent.vercel.app/
@@ -23,6 +24,3 @@ Link to the live site: https://smiledent.vercel.app/
 📂 PostgreSQL for Data Persistence <br>
 🎨 Styling with Tailwind CSS + Shadcn <br>
 ⚡ Data Fetching with TanStack Query <br>
-🤖 CodeRabbit for PR Optimizations <br>
-🧑‍💻 Git & GitHub Workflow (branches, PRs, merges) <br>
-🚀 Deployment on Sevalla (free-tier friendly)
