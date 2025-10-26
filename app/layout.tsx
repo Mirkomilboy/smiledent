@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from '@clerk/themes'
-import UserSync from "@/components/UserSync";
+// import UserSync from "@/components/UserSync";
 import TanStackProvider from "./providers/TanStackProvider";
 import { Toaster } from "sonner";
 
@@ -41,7 +41,8 @@ export default function RootLayout({
           <body
             className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
           >
-            <UserSync />
+            {/* this is done in the hom page component */}
+            {/* <UserSync /> */}
             <Toaster richColors />
             {children}
           </body>

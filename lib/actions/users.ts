@@ -5,8 +5,13 @@ import { prisma } from "../prisma"
 
 export async function syncUser () {
   try {
-    const user = await currentUser()
-    if(!user) return
+    const user = await currentUser();
+    if(!user) return;
+
+    if (!user.emailAddresses?.[0]?.emailAddress) {
+      console.error("User email not available");
+      return;
+    }
 
     const existingUser = await prisma.user.findUnique({where: {clerkId: user.id}})
     if(existingUser) return existingUser;
@@ -21,8 +26,9 @@ export async function syncUser () {
       }
     })
 
-    return dbUser
+    return dbUser;
   } catch (error) {
-    console.error("error in syncUser server action", error)
+    console.error("error in syncUser server action", error);
+    return null;
   }
 }
