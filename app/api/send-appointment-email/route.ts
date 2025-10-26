@@ -22,9 +22,9 @@ export async function POST(request:Request) {
     }
 
     // send email
-    const {data, error} = await resend.emails.send({
+    const { data, error } = await resend.emails.send({
       from: "SmileDent <no-reply@resend.dev>", // don't use this in production
-      to: "msadirov1997@gmail.com",
+      to: [userEmail],
       subject: "Appointment Cofirmation - SmileDent",
       react: AppointmentConfirmationEmail({
         doctorName,
@@ -32,7 +32,7 @@ export async function POST(request:Request) {
         appointmentTime,
         appointmentType,
         duration,
-        price
+        price,
       }),
     });
 
